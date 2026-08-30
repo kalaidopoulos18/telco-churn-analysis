@@ -67,3 +67,23 @@ select total_monthly_revenue ,
        round( lost_monthly_revenue * 100.0 / total_monthly_revenue , 1 ) as revenue_lost_pct
 from revenue;
 
+-- Q6: Which segment costs the most in lost revenue?
+-- Extends Q4 with the monthly revenue attached to churned customers,
+-- sorted by lost revenue rather than churn rate.
+-- Churn % shows risk; lost revenue shows where retention spend pays off.
+-- Result: new customers (0-12 months) on month-to-month are the costliest
+--   segment — 1,024 churned, $68,301/month, 3x the next segment ($22,557).
+--   Month-to-month overall accounts for ~87% of lost revenue ($120.8k of $139.1k).
+with counts as (
+select case when tenure <= 12 then '0-12 months'
+     when tenure <= 24 then '13-24 months'
+     when tenure <= 48 then '25-48 months'
+     else '49+ months'
+end as tenure_group, contract , count(*) as  total_customers , 
+sum(case when Churn='Yes' then 1 else 0 end) as churned,
+round(sum(case when Churn ='Yes' then MonthlyCharges else 0 end),1) as lost_revenue
+from telco_churn
+group by tenure_group , Contract)
+select tenure_group , total_customers , contract ,  churned , round(churned *100 / total_customers , 1 ) as churn_rate , lost_revenue
+from counts
+order by lost_revenue desc ;
