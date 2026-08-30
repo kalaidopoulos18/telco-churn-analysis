@@ -4,6 +4,8 @@ A business-focused analysis of customer churn for a telecommunications
 provider: identifying who leaves, what it costs, and where retention efforts
 would pay off.
 
+**[View the interactive dashboard on Tableau Public](https://public.tableau.com/app/profile/georgios.kalaidopoulos/viz/TelcoCustomerChurnAnalysis_17880996936820/TelcoCustomerChurnWhereRetentionShouldFocus)**
+
 ## Question
 
 26.5% of customers left. Which segments drive that loss, and where should
@@ -28,6 +30,10 @@ tested all available variables at once, and surfaced two signals the initial
 queries had not covered: payment method and internet service type. Two further
 SQL queries were written to quantify the actual churn rates behind those
 signals.
+
+**Third pass — Tableau.** The findings were rebuilt as an interactive dashboard
+so that non-technical stakeholders can filter by contract type or tenure and
+explore the segments themselves, rather than reading fixed charts.
 
 This is worth noting as a lesson in sequencing: a broad exploratory pass
 (correlations, distributions) is better placed *before* targeted queries, not
@@ -108,7 +114,8 @@ a control group and measured before wider rollout.
 
 - `churn_queries.sql` — eight SQL queries, commented
 - `churn_analysis.ipynb` — pandas correlation analysis and charts
+-  Interactive dashboard hosted on Tableau Public (link above)
 
 ## Tools
 
-MySQL · Python (pandas, SQLAlchemy, matplotlib) · Jupyter
+MySQL · Python (pandas, SQLAlchemy, matplotlib) · Jupyter · Tableau Public
