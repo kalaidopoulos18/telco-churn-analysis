@@ -81,15 +81,38 @@ data.
 
 ---
 
-**Recommendation:** Target retention at new month-to-month customers in their
-first year — the segment that is both the largest and the costliest.
+## Recommended actions
 
-Of the available levers, **payment method is the most actionable**: moving
-customers onto automatic payment is a smaller ask than a contract change, and
-the gap between electronic check (45.3%) and automatic methods (~16%) is large.
+Three interventions, ordered by ease of implementation:
 
-These are correlations, not causes. Any intervention should be piloted against
-a control group and measured before wider rollout.
+**1. Incentivise automatic payment (lowest effort)**
+Offer a small monthly discount to electronic-check customers who switch to
+direct debit or card. This is a low-commitment ask, and the gap between
+electronic check (45.3%) and automatic methods (~16%) is the largest
+single-factor difference in the data.
+*Target group:* 2,365 customers — 34% of the base, 57% of all churn.
+
+**2. Strengthen the first-year experience**
+Churn peaks at 47.4% in the first 12 months and falls steadily thereafter.
+Concentrate onboarding contact, proactive support and check-ins in this
+window rather than spreading retention effort evenly across the base.
+*Note:* customers with tech support churn less (r = -0.17), which suggests
+support contact is worth testing as a retention lever.
+
+**3. Move month-to-month customers onto annual contracts (highest impact,
+highest friction)**
+Month-to-month customers are 55% of the base and account for ~87% of lost
+revenue. An upgrade incentive — a discounted first year, or added services —
+addresses the largest financial exposure, but asks for real commitment and
+will convert a smaller share.
+*Target group first:* new month-to-month customers (0-12 months), worth
+68,301 USD/month in lost revenue.
+
+### How to validate
+
+None of these follow causally from the analysis — the data shows association
+only. Each should run as a pilot against a matched control group, with churn
+measured over a defined window before any wider rollout.
 
 ## Charts
 
