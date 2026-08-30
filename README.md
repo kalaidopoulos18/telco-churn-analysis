@@ -19,7 +19,7 @@ churn status. Loaded into MySQL for analysis.
 
 ## Approach
 
-The analysis ran in two passes.
+The analysis ran in three passes.
 
 **First pass — SQL.** Six queries building progressively: overall churn rate,
 segmentation by contract type and tenure, a check for confounding between the
@@ -40,7 +40,7 @@ This is worth noting as a lesson in sequencing: a broad exploratory pass
 after. Starting from assumptions worked here, but only because the initial
 assumptions happened to be correct.
 
-## Findings & Recommendations
+## Findings 
 
 ### 1. Contract type is the strongest churn driver
 Month-to-month customers churn at **42.7%**, versus 11.3% (one year) and
