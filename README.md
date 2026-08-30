@@ -86,6 +86,7 @@ data.
 Three interventions, ordered by ease of implementation:
 
 **1. Incentivise automatic payment (lowest effort)**
+
 Offer a small monthly discount to electronic-check customers who switch to
 direct debit or card. This is a low-commitment ask, and the gap between
 electronic check (45.3%) and automatic methods (~16%) is the largest
@@ -93,6 +94,7 @@ single-factor difference in the data.
 *Target group:* 2,365 customers — 34% of the base, 57% of all churn.
 
 **2. Strengthen the first-year experience**
+
 Churn peaks at 47.4% in the first 12 months and falls steadily thereafter.
 Concentrate onboarding contact, proactive support and check-ins in this
 window rather than spreading retention effort evenly across the base.
@@ -101,6 +103,7 @@ support contact is worth testing as a retention lever.
 
 **3. Move month-to-month customers onto annual contracts (highest impact,
 highest friction)**
+
 Month-to-month customers are 55% of the base and account for ~87% of lost
 revenue. An upgrade incentive — a discounted first year, or added services —
 addresses the largest financial exposure, but asks for real commitment and
